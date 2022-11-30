@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import GlobalStyle from "./assets/css/GlobalStyle"
+import Header from "./components/Header";
+import FlashCards from "./components/FlashCards";
+import FooterInfo from "./components/FooterInfo"
+import cards from "./questions"
 
-function App() {
+
+export default function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyle/>
+
+      <Header/>
+      <FlashCards
+        cards={cards}
+      />
+      <FooterInfo/>
+    </>
   );
 }
 
-export default App;
+
+
