@@ -12,7 +12,7 @@ export default function FlashCards(props){
                         <FlashCard
                             key={index}
                             question={card.question}
-                            answer={card.question}
+                            answer={card.answer}
                             index={index+1}
                         />
                     )

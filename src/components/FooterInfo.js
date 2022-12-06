@@ -1,9 +1,10 @@
 import styled from "styled-components"
 
 export default function FooterInfo(props){
+    const { cards, answeredQuestions } = props
     return(
         <FooterInfoContainer>
-            0/4 CONCLUÍDOS
+            {answeredQuestions}/{cards.length} CONCLUÍDOS
         </FooterInfoContainer>
     )
 }
